@@ -41,6 +41,8 @@ import OtherRobot from "../icons/otherRobot.svg";
 import CatRobot from "../icons/catRobot.svg";
 import RobotImages from "../icons/robotImages.svg";
 
+import MyNav from "../icons/myNav.svg";
+
 import {
   ChatMessage,
   SubmitKey,
@@ -1258,6 +1260,16 @@ function _Chat() {
           </div>
         </div>
         <div className="window-actions">
+          <div className="window-action-button">
+            <a
+              href={`https://homarr.liujiarong.top`}
+              target="_blank"
+              title="应用导航"
+              rel="noopener noreferrer"
+            >
+              <IconButton icon={<MyNav />} shadow />
+            </a>
+          </div>
           {!isMobileScreen && (
             <div className="window-action-button">
               <IconButton

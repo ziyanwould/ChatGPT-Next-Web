@@ -12,6 +12,7 @@ import DeleteIcon from "../icons/delete.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
 import DragIcon from "../icons/drag.svg";
+import MyHome from "../icons/myHome.svg";
 
 import Locale from "../locales";
 
@@ -217,8 +218,23 @@ export function SideBar(props: { className?: string }) {
             </Link>
           </div>
           <div className={styles["sidebar-action"]}>
-            <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
+            <a
+              href={`https://github.com/ziyanwould/ChatGPT-Next-Web`}
+              target="_blank"
+              title="Github"
+              rel="noopener noreferrer"
+            >
               <IconButton icon={<GithubIcon />} shadow />
+            </a>
+          </div>
+          <div className={styles["sidebar-action"]}>
+            <a
+              href={`https://www.liujiarong.top`}
+              target="_blank"
+              title="首页"
+              rel="noopener noreferrer"
+            >
+              <IconButton icon={<MyHome />} shadow />
             </a>
           </div>
         </div>
