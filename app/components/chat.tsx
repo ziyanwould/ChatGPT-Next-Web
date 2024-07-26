@@ -42,6 +42,7 @@ import CatRobot from "../icons/catRobot.svg";
 import RobotImages from "../icons/robotImages.svg";
 
 import MyNav from "../icons/myNav.svg";
+import PluginIcon from "../icons/plugin.svg";
 
 import {
   ChatMessage,
@@ -343,7 +344,7 @@ function ClearContextDivider() {
   );
 }
 
-function ChatAction(props: {
+export function ChatAction(props: {
   text: string;
   icon: JSX.Element;
   onClick: () => void;
@@ -591,6 +592,13 @@ export function ChatActions(props: {
         text={currentModelName}
         icon={<RobotIcon />}
       />
+
+      <ChatAction
+        onClick={() => showToast(Locale.WIP)}
+        text={Locale.Plugin.Name}
+        icon={<PluginIcon />}
+      />
+
       <ChatAction
         text="免费模型"
         icon={<OtherRobot />}
@@ -614,6 +622,7 @@ export function ChatActions(props: {
           window.open("https://aichat.liujiarong.top", "_blank");
         }}
       />
+
       {showModelSelector && (
         <Selector
           defaultSelectedValue={`${currentModel}@${currentProviderName}`}
