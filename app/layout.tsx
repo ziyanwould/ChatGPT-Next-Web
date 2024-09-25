@@ -1,8 +1,8 @@
 /*
  * @Author: liujiarong godisljr@163.com
  * @Date: 2024-01-07 17:55:59
- * @LastEditors: Liu Jiarong
- * @LastEditTime: 2024-04-22 22:55:30
+ * @LastEditors: 刘家荣 14731753+liujiarong2@user.noreply.gitee.com
+ * @LastEditTime: 2024-09-25 11:40:18
  * @FilePath: /ChatGPT-Next-Web/app/layout.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -56,9 +56,9 @@ export default function RootLayout({
         ></link>
         <script src="/serviceWorkerRegister.js" defer></script>
         <script
-          async
+          defer
           src="https://umami.liujiarong.top/script.js"
-          data-website-id="ddb42937-a358-488d-bf87-39c31aacfc10"
+          data-website-id="2bfbc2b3-1e1f-48e0-ac6b-665117069b8d"
         ></script>
         <script
           defer
